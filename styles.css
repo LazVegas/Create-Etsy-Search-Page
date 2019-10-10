@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 40px 40px 40px 1000px 100px 200px;
+    gap: 10px;
+    background-color: pink;
+    grid-template-areas: "header header"
+                        "nava nava"
+                        "navb navb"
+                        "aside main"
+                        "subscribe subscribe"
+                        "footer footer"
+}
+
+header {
+    background-color: blue;
+    grid-area: header;
+    display: grid;   
+    grid-template-columns: 40% 30% 30%;
+    width: 100%;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(41, 62, 96);
+    color: rgb(41, 62, 96);
+}
+
+.search_button {
+    background-color: rgb(41, 62, 96);
+    color: rgb(255, 255, 255);
+}
+
+.nava {
+    background-color: red;
+    display: grid;
+    grid-area: nava;
+    width: 100%;
+
+}
+
+.navb {
+    background-color: green;
+    grid-area: navb;
+    width: 100%
+}
+
+ul > li {
+    display: inline-block;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+aside {
+    background-color: yellow;
+    grid-area: aside;
+    width: 100%;
+}
+
+main {
+    background-color: purple;
+    grid-area: main;
+    width: 100%;
+}
+
+.subscribe {
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 31, 31);
+    grid-area: subscribe;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(41, 62, 96);
+    color: rgb(255, 255, 255);
+    grid-area: footer;
+    width: 100%;
+}
+
+
+}
