@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/1c3bc0e451.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class = "container">
 
         <Header class="top">
+            <img src="etsy_logo.png" alt="Esty Logo" width="80" height="80" /> 
             <form class="top_left">
-                <img src="etsy_logo.png" alt="Esty Logo" width="40px" height="40px"></img>
                 <label for="search"></label>
                 <input placeholder="whiskey" id="search" type="text" name="search" />
-                <input type="submit">
             </form>
+            <p class='x'>X</p>
+            <i class="fas fa-search"></i>
             <div class="top_right">
                 <p>Sell on Etsy</P>
                 <p>Register</p>
-                <p>Sign in</p>
+                <button>Sign in</button>
                 <p>Discover</p>
                 <p>Cart</p>
             </div>
         </Header>
 
         <nav class="nava">
-            <ul>
+            <ul class="spaceBetween">
                 <li>Jewelry & Accessories</li>
                 <li>Clothing & Shoes</li>
                 <li>Home & Living</li>
@@ -41,7 +43,7 @@
         </nav>
 
         <nav class="navb">
-            <ul>
+            <ul class="start">
                 <li>whiskey decanter</li>
                 <li>whiskey glasses</li>
                 <li>whiskey barrel</li>
@@ -56,6 +58,11 @@
         </nav>
 
         <aside class="left">
+            <ul>
+                <li>Special offers</li>
+                <li>All categories</li>
+            </ul>
+
             <div>Special offers</div>
             <div>All categories</div>
             <div>Shipping</div>
@@ -72,25 +79,59 @@
         </aside>
 
         <main class="right">
-            <section>
-                <div class="abovePic">Above pic</div>
-                <img class="picture" src="picture.jpg" alt="Beer picture">
-                <div class="belowPic1"></div>
-                <div class="belowPic2"></div>
-                <div class="belowPic3"></div>
-                <div class="belowPic4"></div>
+            <section class="products">
+                <img src="picture.jpg" alt="Picture of beer" width="340" height="270" />
+                <h3>foobar</h3>
+                <div class="desc">
+                    <p>Views: 29</p>
+                    <p class = "price">12.00</p>
+                </div>
             </section>
+            <section class="products">
+                <img src="picture.jpg" alt="Picture of beer" width="340" height="270">
+                <h3>foobar</h3>
+                <div class="desc">
+                    <p>Views: 29</p>
+                    <p class = "price">12.00</p>
+                </div>
+            </section>
+            <section class="products">
+                <img src="picture.jpg" alt="Picture of beer" width="340" height="270">
+                <h3>foobar</h3>
+                <div class="desc">
+                    <p>Views: 29</p>
+                    <p class = "price">12.00</p>
+                </div>
+            </section>
+            <section class="products">
+                <img src="picture.jpg" alt="Picture of beer" width="340" height="270">
+                <h3>foobar</h3>
+                <div class="desc">
+                    <p>Views: 29</p>
+                    <p class = "price">12.00</p>
+                </div>
+            </section>
+            <section class="products">
+                <img src="picture.jpg" alt="Picture of beer" width="340" height="270">
+                    <h3>foobar</h3>
+                    <div class="desc">
+                        <p>Views: 29</p>
+                        <p class = "price">12.00</p>
+                    </div>
+            </section>
+
         </main>
 
-        <section class="subscribe">
+        <article class="subscribe">
             <p>Get fresh Etsy trends and unique gift ideas delivered right to your inbox.</p>
-        </section>
+        </article>
 
         <footer class="bottom">
             <p>This is the footer area</p>
         </footer>
 
     </div>
+    <script src="items.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
