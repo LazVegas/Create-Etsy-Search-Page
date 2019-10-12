@@ -1,18 +1,25 @@
+/* From Video */
 html {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
-*, *::before, *::after {
+/* From Video */
+*, 
+*::before,
+*::after {
     box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
+/* From Video */
 .container {
-    max-width: 1300px;
+    width: 1200px;
     margin: auto;
-    display: grid;
-    grid-template-columns: 240px 960px;
+    color: #222222;
+    
+/*    display: grid;
+    grid-template-columns: 300px 1100px;
     gap: 10px;
     background-color: pink;
     grid-template-areas: "header header"
@@ -21,56 +28,89 @@ html {
                         "aside main"
                         "subscribe subscribe"
                         "footer footer"
+*/
 }
 
+/* From Video */
 header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
     background-color: blue;
+}
+
+input {
+    width: 287;
+    height: 34;
+}
+
+.SellOnEtsy {
+    font-size: 14px;
+}
+
+.Register {
+    font-size: 14px;
+}
+
+.SignIn {
+    width: 64.17;
+    height: 34;
+}
+
+.Discover {
+    width: 67.8;
+    height: 80;
+}
+
+.cart {
+width: 42.78;
+height: 80;
+}
+
+
+/* From Video */
+.body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+/*
     grid-area: header;
     display: grid;
-    grid-template-columns: 100px 700px 0px 0px 300px;
-    align-content: center;
+    grid-template-columns: 100px 400px 100px 100px 100px 100px 100px;
     width: 100%;
-    height: 100px;
+*/
 }
 
+/*
 form {
-    display: grid;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(41, 62, 96);
-    border-radius: 35px;
     color: rgb(41, 62, 96);
-    position: relative;
+    width: 500px;
+    height: 40px;
 }
+*/
 
-.x {
-    position: absolute;
-    top: 200;
-    right: 200;
-}
-
-.fas fa-search {
-    position: absolute;
-    top: 200;
-    right: 200;
-}
-
-.top_right {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: end;
-    font-size: 12px;
-}
-
-
-
+/*
 .nava {
     background-color: red;
     grid-area: nava;
     display: grid;
-    justify-content: space-between;
     margin: auto;
     width: 100%;
     height: 50px;
+}
+
+.nava > ul {
+    display: grid;
+    list-style-type: none;
+}
+
+.nava > ul > li {
+    display: grid;
+    width: 100%;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .navb {
@@ -95,31 +135,64 @@ ul {
     border-radius: 30px;
     border-color: tan;
 }
+*/
 
+/* From Video */
 aside {
-    background-color: yellow;
-    grid-area: aside;
+    /* background-color: yellow; */
     width: 100%;
 }
 
+/* From Video */
 main {
-    background-color: purple;
-    grid-area: main;
+    /* background-color: purple; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* grid-area: main;
     width: 100%;
     display: grid;
     grid-template-columns: repeat (4, 1 fr);
+    */
 }
 
-.products {
-    width: 340px;
+.product {
+    display: grid;
     cursor: pointer;
+    border: 1px solid #666;
 }
 
+.product img {
+    width: 100%;
+}
+
+
+
+
+/* From Video */
+/* .product h2 { */
+h3 {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* From Video */
+.product p {
+    margin: 0;
+}
+
+
+/* From Video */
 .desc {
     display: flex;
     justify-content: space-between;
 }
 
+/*
 .subscribe {
     background-color: rgb(255, 255, 255);
     color: rgb(31, 31, 31);
@@ -136,3 +209,4 @@ footer {
     width: 100%;
     height: 100px;
 }
+*/

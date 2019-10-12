@@ -12,7 +12,7 @@ var items = {
       "ending_tsz":1541528082,
       "original_creation_tsz":1506371932,
       "last_modified_tsz":1530897282,
-      "price":"3.95",
+      "price":"3.95",                               /* Price field */
       "currency_code":"USD",
       "quantity":11,
       "sku":[
@@ -50,7 +50,7 @@ var items = {
       "featured_rank":null,
       "state_tsz":1530581601,
       "url":"https:\/\/www.etsy.com\/listing\/546654944\/printed-custom-cognac-label-custom?utm_source=theironyardteaching&utm_medium=api&utm_campaign=api",
-      "views":19475,
+      "views":19475,                                /* Views field */
       "num_favorers":347,
       "shipping_template_id":46856492797,
       "processing_min":1,
@@ -1013,7 +1013,7 @@ var items = {
       ],
       "Shop":{
         "shop_id":9357895,
-        "shop_name":"TheTweedyGiftCompany",
+        "shop_name":"TheTweedyGiftCompany",         /* Field */
         "user_id":46500204,
         "creation_tsz":1396530879,
         "title":"Personalised Tweed Gifts",
