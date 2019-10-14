@@ -1,178 +1,328 @@
-/* From Video */
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-/* From Video */
 *, 
 *::before,
 *::after {
     box-sizing: inherit;
-    /* margin: 0;
-    padding: 0; */
 }
 
-/* From Video */
 .container {
-    width: 1200px;
+    width: 1400px;
     margin: auto;
     color: #222222;
     
-/*    display: grid;
+    display: grid;
     grid-template-columns: 300px 1100px;
-    gap: 10px;
-    background-color: pink;
+    grid-column-gap: 10px;
     grid-template-areas: "header header"
-                        "nava nava"
-                        "navb navb"
+                        "nav nav"
+                        "section section"
                         "aside main"
-                        "subscribe subscribe"
+                        "article article"
                         "footer footer"
-*/
 }
 
-/* From Video */
+/* Header Section */
 header {
-    height: 100px;
+    grid-area: header;
+    width: 1400px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-content: center;
-    background-color: blue;
+    color: #222222;
+    font-size: 12px;
+    background: #ffffff;
+    margin: 0px 25 1.5px;
+    padding: 0px 36px;
+}
+     /* Header Block 1 - Etsy Logo */
+#logo {
+    width: 86px;
+    height: 80px;
+    color: #222222;
+    font-size: 14px;
+    padding-top: 12px;
 }
 
-input {
-    width: 287;
-    height: 34;
+    /* Header Block 2 - Search Section */
+#search {
+    display: flex;
+    width: 820px;
+    height: 80px;
+    color: #222222;
+    font-size: 14px;
+    position: relative;
 }
 
-.SellOnEtsy {
+#inputsearch {
+    width: 800px;
+    height: 48px;
+    padding: 9px 42px 9px 18px;
+    position: relative;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #C2C2C2;
+}
+
+#cancel {
+    display:flex;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    position: absolute;
+    top: 7px;
+    right: 170px;
+}
+
+#button-b {
+    width: 61px;
+    height: 48px;
+    color: #222222;
+    font-size: 16px;
+    padding: 12px 21px 12px 15px;
+}
+
+#button-c {
+    width: 42px;
+    height: 32.2px;
+    background: #222222;
+}
+
+    /* Header Block 3 - Right */
+#right {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 430px;
+    height: 80px;
+    color: #222222;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+    /* Sell on Etsy */
+#sell-on-etsy-link {
+    width: 95px;
+    height: 80px;
+    color: #222222;
     font-size: 14px;
 }
 
-.Register {
+#sell-on-etsy-link a:link {
+    text-decoration: none;
+}
+
+#sell-on-etsy-link a:hover {
+    text-decoration: underline;
+}
+
+#etsy-trigger {
+    display: flex;
+    align-content: center;
+    height: 34px;
+    color: #222222;
+    font-size: 14px;
+    margin: 23px 0px 0px;
+    padding: 8px;
+}
+
+    /* Register */
+#register-link {
+    width: 80px;
+    height: 80px;
+    color: #222222;
     font-size: 14px;
 }
 
-.SignIn {
-    width: 64.17;
-    height: 34;
+#register-link a:link {
+    text-decoration: none;
 }
 
-.Discover {
-    width: 67.8;
-    height: 80;
+#register-link a:hover {
+    text-decoration: underline;
 }
 
-.cart {
-width: 42.78;
-height: 80;
+#register-trigger {
+    display: flex;
+    align-content: center;
+    height: 34px;
+    color: #222222;
+    font-size: 14px;
+    margin: 23px 7px 0px 0px;
+    padding: 8px;
 }
 
+    /* Sign in Button */
+#sign-in-link {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: #222222;
+    font-size: 14px;
+}
 
-/* From Video */
+#sign-in-link a:link {
+    text-decoration: none;
+}
+
+#sign-in-link a:hover {
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
+#sign-in-trigger {
+    width: 66px;
+    height: 34px;
+    color: #222222;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #222222;
+}
+
+    /* Cart */
+#nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 50px;
+    height: 80px;
+    color: #222222;
+    font-size: 12px;
+    padding: 0px 9px;
+}
+
+i.fas fa-shopping-cart::before {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    background-color: red;
+}
+
+/* End of Header section */
+
+/* Start of 1st Navigation section */
+
+nav {
+    grid-area: nav;
+    height: 34px;
+    color: #222222;
+    padding: 0px 18px;
+}
+
+ul#navalist {
+    margin: 0px;
+}
+
+#navalist {
+    display: flex;
+    justify-content: space-between;  
+    align-content: center;   
+    background-color: #FFFFFF;
+    font-size: 13px;
+    list-style-type: none;
+    padding: 0px 18px;
+}
+
+#navalist > li {
+    height: 30px;
+    margin: 4px 12px 0px 0px;
+    padding: 0px 0px 12px;
+}
+
+/* End of 1st Navigation section */
+
+/* Start of 2nd Navigation section */
+
+section {
+    grid-area: section;
+    display: flex;
+    height: 75px;
+    color: #222222;
+    padding: 3px 0px 3px 18px;
+}
+
+#navblist {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    list-style-type: none;
+    height: 75px;
+    color: #222222;
+    margin: 0px 0px -6px;
+    padding: 0px 0px 0px 36px;
+}
+
+#navblist li {
+    display: flex;
+    align-content: center;
+    margin: 0px 6px 0px 6px;
+}
+
+#navblist li a {
+    height: 36px;
+    background-color: #FAA077;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+/* End of 2nd Navigation section */
+
+/* Start of Body section */
 .body {
     display: grid;
     grid-template-columns: 1fr 4fr;
-/*
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 100px 400px 100px 100px 100px 100px 100px;
-    width: 100%;
-*/
 }
+/* End of Body section */
 
-/*
-form {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(41, 62, 96);
-    color: rgb(41, 62, 96);
-    width: 500px;
-    height: 40px;
-}
-*/
-
-/*
-.nava {
-    background-color: red;
-    grid-area: nava;
-    display: grid;
-    margin: auto;
-    width: 100%;
-    height: 50px;
-}
-
-.nava > ul {
-    display: grid;
-    list-style-type: none;
-}
-
-.nava > ul > li {
-    display: grid;
-    width: 100%;
-    align-content: center;
-    justify-content: space-around;
-}
-
-.navb {
-    grid-area: navb;
-    display: grid;
-    justify-content: space-between;
-    margin: auto;
-    width: 100%;
-    height: 50px;
-}
-
-ul {
-    display:grid;
-    grid-template-columns: repeat(9, 1fr);
-    justify-content: space-between;
-    align-content: center;
-    font-size: 10px; 
-}
-
-.start li {
-    list-style-type: none;  
-    border-radius: 30px;
-    border-color: tan;
-}
-*/
+/* Start of Aside (left) section */
 
 /* From Video */
 aside {
-    /* background-color: yellow; */
+    grid-area: aside;
+    background-color: yellow;
     width: 100%;
 }
 
-/* From Video */
+/* End of Aside (left) section */
+
+/* Start of Body (right) section */
 main {
-    /* background-color: purple; */
+    grid-area: main;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    /* grid-area: main;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat (4, 1 fr);
-    */
 }
 
+    /* ----- Start of products.js styling ----- ***/
 .product {
     display: grid;
     cursor: pointer;
     border: 1px solid #666;
 }
 
-.product img {
-    width: 100%;
+.product p {
+    margin: 0;
 }
 
+.product img {
+    width: 100%;
+    margin-bottom: 5px;
+}
 
-
-
-/* From Video */
-/* .product h2 { */
-h3 {
-    margin: 0;
+    /* title */
+.product h3 {
+    margin: 0px 0px 5px 0px;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -180,33 +330,103 @@ h3 {
     font-size: 14px;
 }
 
-/* From Video */
-.product p {
-    margin: 0;
+    /* shop name is 3 */
+.product p:nth-child(3) {
+    color: #595959;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
 
-
-/* From Video */
-.desc {
+.product div {
     display: flex;
-    justify-content: space-between;
+    color: #222222;
+    font-size: 14px;
 }
 
-/*
-.subscribe {
-    background-color: rgb(255, 255, 255);
-    color: rgb(31, 31, 31);
-    grid-area: subscribe;
+#rating {
+    width: 72px;
+    height: 14px;
+    background: url(stars72.png);
+    margin-bottom: 5px;
+}
+
+.rate {
+    width: 72px;
+    height: 14px;
+    background: url(stars72.png);
+    background-position: 0px -14px;
+    display: block;
+    width: 48%;
+    margin-bottom: 5px;
+}
+
+    /* views is 2 */
+.product p:nth-child(2) {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #222222;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+    
+h4 {
+    margin: 5px 0px 0px 0px;
+    font-size: 12px;
+}
+    
+    /* ----- End of products.js styling ----- ***/
+    
+/* End of Body (right) section */
+    
+/* Start of Subscribe section */
+article {
+    grid-area: article;
+    background: lightblue;
+    color: #222222;
     text-align: center;
-    width: 100%;
-    height: 100px;
+    font-weight: bold;
+    margin-top: 40px;
+    text-decoration-style: wavy;
+     margin-top: 40px;
 }
 
-footer {
-    background-color: rgb(41, 62, 96);
-    color: rgb(255, 255, 255);
-    grid-area: footer;
-    width: 100%;
-    height: 100px;
+form {
+    display: flex;
+    justify-content: center;
 }
-*/
+
+input:nth-child(1) {
+    width: 225px;
+    height: 48px;
+    padding: 9px 12px 9px 18px;
+    border-radius: 25px 0px 0px 25px;
+    background-color: #FFFFFF;
+}
+
+input:nth-child(2) {
+    width: 225px;
+    height: 48px;
+    color: #222222;
+    padding: 12px 21px 12px 15px;
+    border-radius: 0px 25px 25px 0px;
+    font-size: 16px;
+    text-align: right;
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+    box-shadow: none;
+    border: 1px solid gray;
+}
+
+/* End of Subscribe section */
+
+/* Start of Footer section */
+footer {
+    grid-area: footer;
+    background-color: pink;
+    text-align: center;
+}
+
+/* End of footer section */

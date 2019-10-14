@@ -11,29 +11,25 @@
 </head>
 <body>
     <div class = "container">
-        <Header>
-            <img src="etsy_logo.png" alt="Esty Logo" width="75" height="80" />
-            <form>
-                <input placeholder="whiskey" id="search" type="text" name="search" />
-                <button>X</button>
-                <button><i class="fas fa-search"></i></button>
-            </form>
-            <p class="SellOnEtsy">Sell on Etsy</P>
-            <p class="Register">Register</p>
-            <button class="SignIn">Sign in</button>
-            <p class="Discover">Discover</p>
-            
-            <div class
-            
-            
-            <div class="cart">
-                <p>icon</p>
-                <p>Cart</p>
+        <header>
+            <div id="logo">
+                <img src="etsy_logo.png" alt="Esty Logo" width="80" height="70" />
             </div>
-        </Header>
-<!--
-        <nav class="nava">
-            <ul class="spaceBetween">
+            <div id="search">
+                <input id="inputsearch" placeholder="whiskey" type="text" name="search">
+            <!--    <button id="cancel">X</button></input>
+                <button id="button-b"><button id="button-c"><i class="fas fa-search"></i></button></button> -->
+            </div>
+            <ul id="right">
+                <li id="sell-on-etsy-link"><a id="etsy-trigger" href="https://www.etsy.com/sell?ref=hdr-sell&from_page=https%3A%2F%2Fwww.etsy.com%2Fsell">Sell on Etsy</a></li>
+                <li id="register-link"><a id="register-trigger" href="#">Register</a></li>
+                <li id="sign-in-link"><a id="sign-in-trigger" href="#">Sign in</a></li>
+                <a id="nav-link"><i class="fas fa-shopping-cart"></i><span>Cart</span></a>
+            </ul>
+        </header>
+
+        <nav>
+            <ul id="navalist">
                 <li>Jewelry & Accessories</li>
                 <li>Clothing & Shoes</li>
                 <li>Home & Living</li>
@@ -42,60 +38,50 @@
                 <li>Art & Collectibles</li>
                 <li>Craft Supplies</li>
                 <li>Vintage</li>
-                <li>Gifts</li>
+                <li id="gift"><i class="fas fa-gift"></i><span> Gifts</span></li>
             </ul>
         </nav>
 
-        <nav class="navb">
-            <ul class="start">
-                <li>whiskey decanter</li>
-                <li>whiskey glasses</li>
-                <li>whiskey barrel</li>
-                <li>whiskey stones</li>
-                <li>whiskey shirt</li>
-                <li>whiskey</li>
-                <li>scotch</li>
-                <li>whiskey dispenser</li>
-                <li>bourdon</li>
-                <li>beer</li>
+        <section>
+            <ul id="navblist">
+                <li><a>whiskey decanter</a></li>
+                <li><a>whiskey stones</a></li>
+                <li><a>whiskey glasses</a></li>
+                <li><a>whiskey barrel</a></li>
+                <li><a>bourdon</a></li>
+                <li><a>scotch</a></li>
+                <li><a>whiskey gift</a></li>
+                <li><a>whiskey sign</a></li>
+                <li><a>whiskey svg</a></li>
+                <li><a>beer</a></li>
             </ul>
-        </nav>
-    -->
-        <section class="body">
+        </section>
+
+        <div class="body">
             <aside>
                 <ul>
                     <li>Special offers</li>
                     <li>All categories</li>
-                </ul>
+                 </ul>
 
-             <!--   <div>Special offers</div>
-                <div>All categories</div>
-                <div>Shipping</div>
-                <div>Material</div>
-                <div>Color</div>
-                <div>Can be personalized</div>
-                <div>Occasion</div>
-                <div>Holiday</div>
-                <div>Shop location</div>
-                <div>Item type</div>
-                <div>Price ($)</div>
-                <div>Ordering options</div>
-                <div>Ship to</div> -->
             </aside>
 
             <main></main>
 
-        </section>
+        </div>
 
-        <!--
-        <article class="subscribe">
+        <article>
             <p>Get fresh Etsy trends and unique gift ideas delivered right to your inbox.</p>
+            <form>
+                <input placeholder="Enter your email" type="email" name="email">
+                <input type="submit" value="Subscribe">
+            </form>
         </article>
 
         <footer class="bottom">
             <p>This is the footer area</p>
         </footer>
-    -->
+
     </div>
     <script src="items.js"></script>
     <script src="products.js"></script>

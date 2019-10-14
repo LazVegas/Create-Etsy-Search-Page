@@ -1,24 +1,26 @@
-/* var template = `
-<div class="product">
-    <img src="product.jpeg" />
-    <h2>foobar</h2>
-    <div class="desc">
-        <p>Views: 29</p>
-        <p class = "price">12.00</p>
-    </div>
-</div>
-`
-*/
+/* var rating = document.querySelector("#rating")
+var ratingp = document.querySelector("#rating::after")
+var rate = Number(rating.innerHTML)
+rating.innterHTML = ""
+ratingp.width = (rate / 5 *100) + "%" */
+
 const html = items.results
     .map(x => {
     return `
     <div class="product">
         <img src="${x.Images[0].url_170x135}" />
         <h3>${x.title}</h3>
-        <div class="desc">
-            <p>Views: ${x.Shop.shop_name}</p>
-            <p class = "price">&dollar;${x.price}</p>
+        <p>${x.Shop.shop_name}</p>        
+        <div>
+
+            <div id="rating">
+                <div class="rate"></div>
+            </div>
+
+            <p>&nbsp;&nbsp;(${x.views})</p>
         </div>
+        <p class="price">&dollar;${x.price}</p>
+        <h4>Free shipping eligible</h4>
     </div>
     `
 })
@@ -27,3 +29,6 @@ const html = items.results
 console.log(html)
 
 document.querySelector("main").innerHTML = html
+
+
+
